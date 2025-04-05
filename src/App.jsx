@@ -1,7 +1,10 @@
 export default function App() {
   return (
-    <>
-      <h1>Recipe Finder</h1>
+    <div className="py-20 px-2 max-w-4xl mx-auto">
+      <h1 className="text-4xl lg:text-5xl text-neutral-900 bg-[#FEA609] rounded-lg font-bold text-center">
+        Wellcome to Recipe Finder
+      </h1>
+
       <form>
         <input
           type="text"
@@ -17,6 +20,7 @@ export default function App() {
             Name of the recipe <span>Category</span>Region<span></span>
           </h2>
           <img
+            className="w-full object-cover"
             src="https://i.pinimg.com/736x/93/d5/d4/93d5d4b3d5932388b3e6ed1db050ac0f.jpg"
             alt=""
           />
@@ -39,6 +43,6 @@ export default function App() {
           </ul>
         </article>
       </div>
-    </>
+    </div>
   );
 }
