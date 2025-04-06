@@ -21,3 +21,37 @@ API: TheMealDB
 State Management: React Hooks (useState, useEffect)
 
 Deployment: Vercel/Netlify
+
+Installation & Setup
+
+1. Clone the repository
+   git clone https://github.com/hay-mi/tasty-recipes.git
+   cd tasty-recipes
+2. Install dependencies
+   npm install
+3. Start the development server
+   npm run dev
+   The app will be available at http://localhost:5173/ (if using Vite).
+
+API Integration
+
+The app fetches recipes using TheMealDB API:
+fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata`)
+
+Components
+
+SearchBar – Handles user input for searching recipes.
+RecipeCard – Displays individual recipe previews.
+RecipeDetails – Shows ingredients, steps, and video tutorials.
+
+Deployment
+
+To deploy the application:
+
+1. Build the project:
+   npm run build
+2. Deploy on Vercel or Netlify
+
+Screenshots
+
+![alt text](image.png)
